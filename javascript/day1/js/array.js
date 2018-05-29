@@ -1,14 +1,22 @@
 var arr1 = [132,"123",true];
 
+<<<<<<< HEAD
 // 배열 
+=======
+>>>>>>> master
 console.log("arr1" + arr1);
 console.log("arr1 type : " + typeof arr1[0] +","+ 
                 typeof arr1[1] +","+ typeof arr1[2]);
 
 var arr2 = new Array();
 arr2[4] = "123";
+<<<<<<< HEAD
 
 console.log("arr2 : " + arr2);
+=======
+console.log("arr2 : " + arr2);
+
+>>>>>>> master
 var arr3 = ["hell" , "world"];
 
 // concat(array) - 두개의 배열을 하나의 배열로 만들어 반환
