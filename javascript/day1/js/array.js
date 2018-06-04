@@ -57,7 +57,7 @@ console.log("arr5 : " + arr5);
 arr5.reverse();
 console.log("arr5.reverse() : " +arr5);
 
-//sort -
+//sort - 모든값을 문자열로 바꿈
 var arr6 = arr4.sort();
 console.log("arr4.sort() : " +arr6 );
 
