@@ -36,11 +36,11 @@ function indexOfs(str2 , str3){
         if(index == -1)
             break;
         arr.push(index);
-        index = index + str3.length();
+        index = index + str3.length;
     }
     return arr;
 }
-var res = indexOf(str2.str3);
+var res = indexOfs(str2,str3);
 console.log(res.join(" , "));
 
 
