@@ -68,4 +68,4 @@ $("#beginAttr input[name $= 'inputName']").val("^test");
 
 //id가 idAttr이고 자손중에 input 태그의 id가 test를 단어로 포함하는 요소들의
 // value fmf IDTEST로 설정한다.
-$("#idAttr input[id ~= 'test']").val("IDtest")
+$("#idAttr input[id ~= 'test']").val("IDtest");
