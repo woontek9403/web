@@ -26,8 +26,6 @@ $(".font-red").css("color","red");
 */ 
 
 
-
-
 //:animated 필터 예제
 /*id가 run인 요소를 클릭하면*/ 
 $("#run").click(function(){
@@ -49,10 +47,6 @@ function animatedIt(){
 animatedIt();
 
 
-
-
-
-
 //focus 필터 예제
 
 // id가 contents인 요소의 모든 하위요소(*)중에서 focus blur 이벤트가
@@ -72,15 +66,9 @@ $("#contents").delegate("*","focus blur",function(){
 });
 
 
-
-
-
 // header 필터예제
 // id가 header 요소에서 header 태그(h1,h2....h6)의 css를 수정한다
 $("#header :header").css({backgroumd:"#ccc",color:"blue"});
-
-
-
 
 
 //lang() 필터예제
