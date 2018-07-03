@@ -6,5 +6,5 @@ $("body").delegate("input" , "focus blur" , function(){
 
 $("button").click(function(){
     alert("제출완료");
-    $("input").val("");
+    $("input").val(""); 
 });
