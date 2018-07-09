@@ -49,19 +49,17 @@ animatedIt();
 
 //focus 필터 예제
 
-// id가 contents인 요소의 모든 하위요소(*)중에서 focus blur 이벤트가
-// 발생하면 함수를 실행한다. 
-$("#contents").delegate("*","focus blur",function(){
-     
-    // 이벤트가 발생된 객체의 정보를 element에 저장한다
+//focus 필터 예제
+// id가 contents인 요소의 모든 하위요소(*) 중에서 focus blur 이벤트가 발생하면
+// 함수를 실행한다.
+$("#contents").delegate("*", "focus blur",function(){
+    // 이벤트가 발생된 객체의 정보를 element 저장한다.
     var element = $(this);
-    // 함수가 0초뒤에 실행되도록 setTimeout 함수에 등록한다.
+    // 함수가 0초뒤에 실행되도록 setTimeout함수에 등록한다.
     setTimeout(function(){
-        //객체에 focused클래스가 있으면 제거 , 없으면 생성하며
+        // 객체에 focused 클래스가 있으면 제거, 없으면 추가하는데 
         // 객체가 focus된 상태이면
-        element.toggleClass("focused",element.is(":focus"));
-        //  setTimeout는에서 시간은 무조건 들어가야하므로
-        // 해당 메소드의 지연시간을 0초로 설정함
+        element.toggleClass("focused", element.is(":focus"));
     },0);
 });
 
