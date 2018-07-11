@@ -1,0 +1,11 @@
+
+.div{
+ background-image: url();
+ width: 80px;
+ height: 100px;
+}
+label.error{
+    color: red;
+    display: block;
+    margin: 5px 0;
+}
