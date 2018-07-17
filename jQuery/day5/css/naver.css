@@ -1,0 +1,59 @@
+@charset 'utf-8';
+.container{
+    width: 1080px;
+    border: solid black 1px;
+    margin: 0 auto;
+    position:  relative;
+}
+
+.li{
+    display: inline-block;
+    right: 10px;
+}
+.nav{
+    font-size: 7pt;
+}
+.a{
+  color:rgb(190, 190, 190);
+}
+.bor{
+border: 2px solid rgb(241, 243, 246);
+}
+.input{
+width: 478px; 
+height: 40px;
+margin :10px 0 50px 0;
+vertical-align: middle;  /* 수직정렬 **중요함*/
+border: 2px solid rgb(0, 199, 60);
+}
+.input2{
+    width: 40px;
+    height: 46px;
+    margin :10px 0 50px -10px;    
+    vertical-align: middle;
+    background-color: rgb(0, 199, 60);
+    border: 2px solid rgb(0, 199, 60);
+    
+}   
+.bl{
+    color: black;
+    font-weight:bold;
+    text-decoration:none;
+}
+.gr{
+    color:  rgb(0, 199, 60);
+    font-weight:900;
+    text-decoration:none;
+}
+
+   
+#div1{
+   margin:0 5px 0 0;
+    width:330px;
+    height: 118px;
+    vertical-align: top;
+}
+.in1{
+    width: 148px;
+    height: 32px;
+}
