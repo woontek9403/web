@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/naver1.css">
+   
     <title>Document</title>
 </head>
 <body>
@@ -19,10 +20,13 @@
             </div>
             <!-- 헤더 링크 -->
             <div class="header-link">
-                <a href="">네이버 시작페이지로<i class="fas fa-angle-right"></i></a>
+                <a href="#" id="gotonaver">네이버 시작페이지로<i class="fas fa-angle-right"></i></a>
                 <span >|</span>
-                <a href="">쥬니어 네이버</a>
-                <a href="">해피빈</a>
+                <!--  쥬니어 네이버 마우스로 갖다대면 색상변경 -->
+                <a href="#" id="naverjunior">
+                    <span id="blue">쥬</span><span id="orange">니</span><span id="red">어</span><span id="green">네이버</span>
+                </a>
+                <a href="#" id="happy"><span id="green2">해피빈</span></a>
             </div>
             <!-- 검색창 -->
             <div class="header-searching">
@@ -31,7 +35,24 @@
                     <input type="text" class="search-input">
                 </span>
                 <i class="fas fa-keyboard"></i>
-                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-down downfas row"></i>
+                <i class="fas fa-angle-up upfas"></i>
+                    <div class="downsearch">
+                        <div class="div1">
+                            현재 자동 완성 기능을 사용하고 계십니다
+                        </div>
+                        <div>
+                            <div>
+                                <div class="div2">
+                                    <div class="row div3">도움말</div>
+                                    <div class="row div4">|</div>
+                                    <div class="row div3">신고</div>
+                                </div>
+                                <a href="#" class="a1">자동 완성 끄기</a>
+                            </div>
+                        </div>
+                    </div>
+               
                 <!-- 검색 버튼 -->
                 <div class="search-btn">
                     <i class="fas fa-search-plus"></i>
@@ -67,8 +88,46 @@
             <span class="center color-black">더보기
                     <i class="fas fa-angle-down"></i>
             </span>
-            <div class="realtime-search">여기다가 실시간 검색
-                <i class="fas fa-angle-down"></i>
+            <div class="realtime-search">
+                <div id="content">
+                    <dl id="rank-list">
+                        <dt id>실시간 급상승 검색어</dt>
+                        <dd>
+                            <ol>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">1</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">2</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">3</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">4</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">5</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">6</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">7</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">8</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">9</span>순위</a></li>
+                                <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">10</span>순위</a></li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </div>
+                <div id="search-hover">
+                        <dl>
+                            <dt>실시간 급상승 검색어</dt>
+                            <dd>
+                                <ol>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">1</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">2</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">3</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">4</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">5</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">6</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">7</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">8</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">9</span>순위</a></li>
+                                    <li><a href="#"><span style="color: rgb(30, 197, 69); margin: 0 10px 0 0;">10</span>순위</a></li>
+                                </ol>
+                            </dd>
+                        </dl>
+                    </div>
+                <i class="fas fa-angle-down" id="realSearch"></i>
             </div>
         </div>
             
@@ -77,12 +136,13 @@
     </div>
     </div>
     <!-- 컨텐츠 박스 -->
+    <div class="container">
     <div class="container-contents">
         <div class="container-begin">
             <div class="left-box">
                 <img src="https://t1.daumcdn.net/cfile/tistory/2462244C58B0709023" alt="" width=738px; height="118px;">
             </div>
-            <div class="right-box">
+            <div class="right-box border">
                 <div class="container-login">
                     <div class="login">
                         <div class="login-input">
@@ -97,7 +157,7 @@
                         <div class="security-ip">ip보안</div>
                         <div class="security-tmp">일회용</div>
                     </div>
-                    <div class="login-ect">
+                    <div class="login-etc">
                         <input type="checkbox" id="loginchek">
                         <label for="logincheck">로그인 유지</label>
                         <a href="#">회원가입</a>
@@ -112,15 +172,239 @@
         <dir class="container-middle">
             <div class="left-box">
                 <div>
-                    <div class="news"></div>
-                    <div class="news-stande"></div>
+                    <div class="news">
+                        <div id="newsList">
+                            <div style="float: left;">연합뉴스 > </div>
+                            <div id="content2">
+                                    <dl id="rank-list2">
+                                        <dt>뉴스리스트</dt>
+                                        <dd>
+                                            <ol>
+                                                <li><a href="#">1 순위</a></li>
+                                                <li><a href="#">2 순위</a></li>
+                                                <li><a href="#">3 순위</a></li>
+                                                <li><a href="#">4 순위</a></li>
+                                            </ol>
+                                        </dd>
+                                    </dl>
+                                </div>
+                        </div>
+                        <div id="newsMenu">
+                            <a href="#" class="color-green">네이버 뉴스</a>
+                            <a href="#">연애</a>
+                            <a href="#">스포츠</a>
+                            <a href="#">경제</a>
+                        </div>
+                    </div>
+                    <div class="news-stande">
+                        <div class="newsStandMenu">
+                            <div class="row">
+                                <div id="standMenu">
+                                    <a> 뉴스 스탠드 ></a>
+                                    <span> 전체 언론사</span>
+                                    <span>|</span>
+                                    <span>my 뉴스</span>
+                                </div>
+                                <div id="standMenuList">
+                                    <div class="border-box"></div>
+                                    <div class="border-box"></div>
+                                </div>
+                                <div class="standMenuIcon">
+                                        <i class="fas fa-th"></i>
+                                        <i class="fas fa-bars"></i>
+                                        <i class="fas fa-cog"></i>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="newsStandList">
+                            <div class="row border-bottom">
+                                <div class="news-list border-right">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list">
+                                    <div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row border-bottom">
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list border-right"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                                <div class="news-list"><div class="abs">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173223533.png" alt="">
+                                    </div>
+                                    <div class="abs2">
+                                        <a href="#" class="border-right">구독</a>
+                                        <a href="#">기사보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="right-box">
-                <div class="ect"></div>
-                <div class="add"></div>
+                <div class="etc">
+                    <div id="etcMenu" class="border-bottom">
+                        <div class="row">
+                            <div>
+                                <a href="" id="date">07.23<span>(월)</span></a>
+                            </div>
+                            <div id="prevAndNext">
+                                <div class="border-box2 border-left border-right">2</div>
+                                <div class="border-box2">3</div>
+                            </div>
+                            <div id="contNum">1/6</div>
+                        </div>
+                    </div>
+                    <div id="etcContents"></div>
+                </div>
+                <div class="add">
+                    <img src="https://ssl.pstatic.net/tveta/libs/1205/1205185/6cbbef5bc20c9e07c6bc_20180720135447045.jpg" alt="">
+                </div>
             </div>
         </dir>
     </div>
+</div>
+
+
+<!-- jquery (제이쿼리) 코드 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/naver1.js" type="text/javascript"></script>
 </body>
 </html>

@@ -21,17 +21,17 @@ a:visited{
 }
 .container-contents{
     width: 1100px;
-    height: 440px;
+    height: 438px;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgb(242, 244, 247);
+  
 }
 .container-begin{
     height: 120px;
 }
 .container-middle{
-    height: 300px;
-    margin: 8px 0 0 0;
+    height: 308px;
+    margin: 7px 0 0 0;
   
 }
 .container-begin .right-box {
@@ -86,6 +86,60 @@ a:visited{
     margin: 2px;
     display: inline-block;
 }
+/* downsearch css  */
+.downup{ 
+    margin: 15px 0 0 -10px;
+    position: absolute;
+}
+.downsearch{
+    position:absolute;
+    width: 521px;
+    border: 3px solid rgb(30, 197, 69);
+    height: 90px;
+    left: -3px;
+    background-color: white;
+    
+}
+.div1{
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: gray;
+    height: 55px;
+    width: 515px;
+    background-color: white;
+}
+.div2{
+    display: inline-block;
+    height: 29px;
+    width: 150px;
+    background-color: white;
+    margin:  0 0 5px 0;
+}
+.div3{
+    display: inline-block;
+    width: 37px;
+    height: 11px;
+    float: left;
+    padding: 7px 0 0 0;
+    font-size: 12px;
+    background-color: white;
+}
+.div4{
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    float: left;
+}
+.a1{
+    float: right;
+    margin: 0 10px 0 0;
+    width: 110px;
+    height: 11px;
+    padding: 7px 0 0 0;
+    background-color: white;
+    
+}
 .search-input{
     margin: 11px 0 0 9px;
     width: 405px;
@@ -129,6 +183,7 @@ a:visited{
    height: 48px;
    width: 200px;
    padding: 12px 0 0 0;
+   position: relative;
 }
 .realtime-search i{
     float: right;
@@ -137,13 +192,13 @@ a:visited{
 .left-box{
     height: 100%;
     width: 740px;
-    border: 1px solid red;
+    
     display: inline-block;
 }
 .right-box{
     height: 100%;
     width: 332px;
-    border: 1px solid blue;
+    border: 1px solid gray;
     display: inline-block; 
     float: right;
     
@@ -165,7 +220,7 @@ a:visited{
     display: inline-block;
     float: right;
 }
-.login-ect{
+.login-etc{
     margin: 4px 0 0 0;
     font-size: 10pt;
 }
@@ -213,19 +268,264 @@ a:visited{
 }
 .news{
     height: 46px;
-    border: rgb(30, 197, 69) solid 1px;
+    border: grey solid 1px;
+    background-color: white;
+    padding: 10px 5px 0 5px;
 }
 .news-stande{
-    height: 246px;
+    height: 249px;
     margin: 8px 0 0 0;
-    border: purple solid 1px;
+    border: grey solid 1px;
+    background-color: white;
 }
-.ect{
+.etc{
     height: 142px;
-    border: rgb(30, 197, 69) solid 1px;
+    border: gray solid 1px;
+    background-color: white;
+
 }
 .add{
     margin: 8px 0 0 0;
     height: 150px;
     border: purple solid 1px;
+}
+.row div,
+.news div{
+    display: inline-block;
+}
+#newsMenu{
+    float: right;
+
+}
+.newsStandMenu{
+
+    border: none;
+    height: 45px;
+    border-bottom: grey solid 1px;
+    padding: 8px 5px 0 5px;
+}
+.newsStandList{
+    height: 200px;
+    font-size: 0px;
+}
+.row .news-list{
+    width: 123px;
+    height: 67px;
+    position: relative; 
+}
+.border-right{
+    border-right: gray solid 1px;
+}
+.border-bottom{
+    border-bottom: gray solid 1px;
+}
+.abs{
+    position: absolute;
+    top:  20px;
+    left: 15px;
+    z-index: 1;
+    width: 100px;
+    background: white;
+}
+.abs2{
+    position: absolute;
+    top:  20px;
+    left: 15px;
+    z-index: 1;
+    font-size: 14px;
+    background: white;
+    height: 20px;
+    border: solid 1px grey;
+}
+#standMenuList{
+    float: right;
+    font-size: 0px;
+}
+.border-box{
+    border: solid 1px grey;
+    width: 45px;
+    height: 29px;
+}
+#standMenu{
+    margin: 8px 5px 0 5px;
+}
+.standMenuIcon{
+    float: right;
+}
+.border-left{
+    border-left: 1px solid gray;
+}
+.add{
+    margin: 8px 0 0 0;
+    height: 150px;
+}
+#etcMenu{
+    height: 34px;
+}
+#prevAndNext{
+    float: right;
+    font-size: 0px;
+}
+.border-box2{
+    width: 33px;
+    height: 33px;
+}
+#contNum{
+    float: right;
+}
+.border{
+    border: solid 1px gray;
+}
+.container{
+    background: gainsboro;
+}
+
+
+
+
+/* 실시간 검색 css -----------------------------------------------
+-----------------------------------------------------------------*/
+
+
+#content {
+    background: white;
+    display: inline-block;
+  
+}
+
+#rank-list a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 180px;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 160px;
+    height: 20px;
+    margin: 0;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.search-hover{
+  background: white;
+  border: 1px solid gray;
+  display: none;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    
+}
+.display-block{
+    display: block;
+}
+
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+
+/* 뉴스 리스트 */
+#content2 {
+    background: white;
+}
+
+#rank-list2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#rank-list2 a:hover {
+    text-decoration: underline;
+}
+
+#rank-list2 {
+    overflow: hidden;
+    width: 160px;
+    height: 20px;
+    margin: 0;
+}
+
+#rank-list2 dt {
+    display: none;
+}
+
+#rank-list2 dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list2 ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list2 li {
+    height: 20px;
+    line-height: 20px;
+}
+
+/* ----------------------------------------------
+------------------------- 네이버 페이지 홈페이지 */
+#gotonaver{
+    font-size: 11px;
+    color: #888;
+}
+#gotonaver:hover{
+    text-decoration: underline;
+}
+
+/* 쥬니어 네이버 hover를 위한 css */
+#naverjunior{
+    font-weight: bold;
+    color: #999;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.orange{
+    color: orange;
+}
+.green{
+    color: green;
+}
+
+
+/* 해피빈 hover 효과주기위한 css */
+#happy{
+    color: #999;
+    font-weight: bold;
+}
+.green2{
+    color: green;
 }
